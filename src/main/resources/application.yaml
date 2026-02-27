@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Marketplace API
+
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5424/marketplaceapi
+
+
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+  flyway:
+    enabled: true
