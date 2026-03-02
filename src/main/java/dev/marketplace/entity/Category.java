@@ -1,10 +1,16 @@
 package dev.marketplace.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Entity
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "category")
 public class Category {
     @Id
